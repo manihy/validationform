@@ -1,0 +1,32 @@
+<script type="text/javascript">  
+function matchpass(){
+var name=document.f1.name.value;
+var email address=docement.f1.email address.value;  
+var firstpassword=document.f1.password.value;  
+var secondpassword=document.f1.password2.value;
+var verified OTP=document.f1.verified OTP.value;
+var mobile number=document.f1.mobile number.value;  
+  
+if(name==email address)
+if(firstpassword==secondpassword)
+if(verified OTP==mobile number){  
+return true;  
+}  
+else{
+alert("name should type only captical letter);  
+alert("password must be same!")
+alert("mobile number should start with +91);  
+return false;  
+}  
+}  
+</script>  
+  
+<form name="f1" action="register.jsp" onsubmit="return matchpass()">
+name:<input type="name"/><br/>
+email address:<input type="email address" email="email address"/><br/>  
+Password:<input type="password" name="password" /><br/>  
+Re-enter Password:<input type="password" name="password2"/><br/>
+verified OTP:<input type="verified OTP" OTP="verified OTP"/><br/>
+mobile number:<input type="mobile number" mobile number="mobile number"/><br/>  
+<input type="submit">  
+</form>  
